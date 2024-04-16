@@ -1,0 +1,101 @@
+.navStyle{
+   display: flex;
+   flex-direction: column;
+    @media screen and (min-width:1000px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+       
+    }
+  
+}
+
+.text {
+    font-size: 4rem;
+    
+}
+
+.list {
+     height: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+    @media screen and (min-width:1000px) {
+        flex-direction: row;
+       
+    }
+
+
+}
+
+
+.list *:hover {
+    color: var(--color-hover);
+}
+
+.pages {
+    display: inline;
+    transition: all 0.2s linear;
+    height: auto;
+    
+    @media screen and (min-width:1000px) {
+        position: relative;
+       
+    }
+
+}
+
+
+.pagesChildren {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+    height: 0;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    opacity: 0;
+    transition: all 0.2s linear;
+
+    
+
+
+}
+
+.pagesChildrenActive {
+    height: 60px;
+    opacity: 1;
+    /* margin: 0.7rem 0.5rem; */
+    @media screen and (min-width:1000px) {
+        position: absolute;
+        top: 30px;
+       
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.reservation {
+
+    margin-bottom: 6px;
+    display: none;
+
+}
+
+.testimonial {
+    display: none;
+}
