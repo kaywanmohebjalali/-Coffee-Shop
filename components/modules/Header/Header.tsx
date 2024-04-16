@@ -1,16 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import styled from './header.module.css'
 import Link from 'next/link'
 import { FaAngleDown } from "react-icons/fa6";
-let [heightParent,child]=['',''] as any
+let [heightParent, child] = ['', ''] as any
 const Header = () => {
- 
+
   const parentRef = useRef(null)
   const childRef = useRef(null)
 
-  function close(){
-    heightParent = ((parentRef?.current as any)?.style)
-    child = childRef?.current as any;
+  function close() {
+    heightParent = (parentRef.current as any).style
+    child = childRef?.current;
     heightParent.height = '25px';
     child?.classList?.remove(styled.pagesChildrenActive);
     child.childNodes[0].style.display = 'none'
@@ -19,33 +19,33 @@ const Header = () => {
   }
 
   function dropDownHandle() {
-     heightParent = ((parentRef?.current as any)?.style)
-     child = childRef?.current as any;
+    heightParent = ((parentRef?.current as any)?.style)
+    child = childRef?.current;
 
     console.log(child?.childNodes[0].style.display);
     let w = window.innerWidth
-     
-    if (child.childNodes[0].style.display=='none' || child.childNodes[0].style.display=='') {
-  
-      heightParent.height =`${w<1000?'80px':'0'}`;
+
+    if (child.childNodes[0].style.display == 'none' || child.childNodes[0].style.display == '') {
+
+      heightParent.height = `${w < 1000 ? '80px' : '0'}`;
       child?.classList?.add(styled.pagesChildrenActive);
       child.childNodes[0].style.display = 'block'
       child.childNodes[1].style.display = 'block'
 
 
     } else {
-  
-   close()
+
+      close()
 
     }
 
   }
 
-  useEffect(()=>{
-     (window as any)?.addEventListener('resize',()=>{
+  useEffect(() => {
+    window?.addEventListener('resize', () => {
       close()
-     })
-  },[])
+    })
+  }, [])
 
 
   return (
@@ -76,7 +76,7 @@ const Header = () => {
 
               <Link className={`${styled.reservation}`} href='/reservation'>Reservation</Link>
               <Link className={styled.testimonial} href='/testimonial'>Testimonial</Link>
-            </div> 
+            </div>
 
 
 
