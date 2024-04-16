@@ -1,0 +1,61 @@
+.text {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.list {}
+
+
+.pages {
+    display: inline;
+
+    transition: all 0.2s linear;
+
+
+
+    &:hover {
+        height: 80px;
+
+    }
+
+    &:hover .pagesChildren {
+        height: 60px;
+        opacity: 1;
+        margin-bottom: 15px;
+        padding: 20px;
+
+
+    }
+}
+
+
+.pagesChildren {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+    height: 0;
+
+    background-color: rgb(235, 235, 240);
+    padding-left: 10px;
+    opacity: 0;
+    transition: all 0.2s linear;
+
+
+
+}
+
+.reservation {
+    // margin-top: 15px;
+    margin-bottom: 6px;
+
+}
+
+.testimonial {}
