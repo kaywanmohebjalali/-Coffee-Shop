@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    background-color:#f0e9e9 ;
+    background-color:#fff ;
     z-index: 60000;
     
 
@@ -45,7 +45,8 @@
     gap: 15px;
     transition: all 0.3s linear;
 
-    height: 300px;
+    height: 0;
+
     @media screen and (min-width:1000px) {
         flex-direction: row;
        
@@ -54,18 +55,21 @@
 
 }
 
-.navStyle:hover .list{
-    height: 0;
+/* .navStyle:hover .list{
+    height: 300px;
     
 
-}
+} */
 
-.navStyle:hover .list *{
-   opacity: 0;
-   transition: all 0.4s linear;
+.list *{
+    /* opacity: 0;   */
+    transition: all 0.2s linear;
+}
+/* .navStyle:hover .list *{
+   opacity: 1;
     
 
-}
+} */
 
 
 .list *:hover {

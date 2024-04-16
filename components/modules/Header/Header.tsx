@@ -6,8 +6,27 @@ import { FaBars } from "react-icons/fa";
 let [heightParent, child] = ['', ''] as any
 const Header = () => {
 
+  const ulRef = useRef(null)
   const parentRef = useRef(null)
   const childRef = useRef(null)
+
+
+ function openMenuHandle(){
+  let eleUl=(ulRef.current as any)?.style  
+  let eleUlChilde=(ulRef.current as any) .childNodes
+  let eleUlChildeArray =Array.from(eleUlChilde)
+  console.log(eleUlChilde[0].style.opacity);
+  
+  if(eleUl.height=='' || eleUl.height=='0px'){
+    eleUl.height='300px'
+    eleUlChildeArray.map((item:any)=>item.style.opacity=1)
+  }else{
+ 
+    eleUl.height='0px'
+    eleUlChildeArray.map((item:any)=>item.style.opacity=0)
+    
+  }
+ }
 
   function close() {
     heightParent = (parentRef.current as any).style
@@ -56,10 +75,10 @@ const Header = () => {
         <div className={`${styled.topBar}`}>
 
         <h1 className={styled.text}>COFFEE</h1>
-        <div className={styled.icon}><FaBars /></div>
+        <div className={styled.icon} onClick={openMenuHandle}><FaBars /></div>
         </div>
         
-        <ul className={`${styled.list} px-[3.5rem] `} >
+        <ul ref={ulRef} className={`${styled.list} px-[3.5rem] `} >
           <li><Link href='/'>Home</Link></li>
           <li><Link href='/about'>About</Link></li>
           <li><Link href='/service'>Service</Link></li>
