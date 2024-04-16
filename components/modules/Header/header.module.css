@@ -1,5 +1,6 @@
 .navStyle{
    display: flex;
+   position: relative;
    flex-direction: column;
     @media screen and (min-width:1000px) {
       flex-direction: row;
@@ -9,6 +10,27 @@
     }
   
 }
+.topBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color:#f0e9e9 ;
+    z-index: 60000;
+    
+
+
+}
+
+.icon{
+    display: inline;
+    font-size: 2rem;
+    @media screen and (min-width:1000px) {
+        display: none;
+         
+      }
+}
 
 .text {
     font-size: 4rem;
@@ -16,19 +38,32 @@
 }
 
 .list {
-     height: 100%;
-   
     display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: center;
     gap: 15px;
-    
+    transition: all 0.3s linear;
+
+    height: 300px;
     @media screen and (min-width:1000px) {
         flex-direction: row;
        
     }
 
+
+}
+
+.navStyle:hover .list{
+    height: 0;
+    
+
+}
+
+.navStyle:hover .list *{
+   opacity: 0;
+   transition: all 0.4s linear;
+    
 
 }
 

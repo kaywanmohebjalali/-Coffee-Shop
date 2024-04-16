@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import styled from './header.module.css'
 import Link from 'next/link'
 import { FaAngleDown } from "react-icons/fa6";
+import { FaBars } from "react-icons/fa";
 let [heightParent, child] = ['', ''] as any
 const Header = () => {
 
@@ -49,10 +50,15 @@ const Header = () => {
 
 
   return (
-    <div className="my-2 px-[1rem]">
+    <div className=" px-[1rem]">
 
       <nav className={`${styled.navStyle}  `}>
+        <div className={`${styled.topBar}`}>
+
         <h1 className={styled.text}>COFFEE</h1>
+        <div className={styled.icon}><FaBars /></div>
+        </div>
+        
         <ul className={`${styled.list} px-[3.5rem] `} >
           <li><Link href='/'>Home</Link></li>
           <li><Link href='/about'>About</Link></li>
