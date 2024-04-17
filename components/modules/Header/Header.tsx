@@ -17,7 +17,7 @@ const Header = () => {
     let eleUlChildeArray = Array.from(eleUlChilde)
 
     if (eleUl.height == '' || eleUl.height == '0px') {
-      eleUl.height = '300px'
+      eleUl.height = '350px'
       eleUl.opacity = '1'
       eleUlChildeArray.map((item: any) => item.style.opacity = '1')
 
@@ -33,7 +33,8 @@ const Header = () => {
   function close() {
     heightParent = (parentRef.current as any).style
     child = childRef?.current;
-    heightParent.height = '25px';
+    heightParent.height = '30px';
+    
     child?.classList?.remove(styled.pagesChildrenActive);
     child.childNodes[0].style.display = 'none'
     child.childNodes[1].style.display = 'none'
@@ -103,16 +104,16 @@ const Header = () => {
 
 
   return (
-    <div className=" px-[1rem]">
+    <div className="">
 
       <nav className={`${styled.navStyle}  `}>
         <div className={`${styled.topBar}`}>
 
-          <h1 className={styled.text}>COFFEE</h1>
+          <h1 className={styled.text}>COFFEE-SNA</h1>
           <div className={styled.icon} onClick={openMenuHandle}><FaBars /></div>
         </div>
 
-        <ul ref={ulRef} className={`${styled.list} px-[3.5rem]`} >
+        <ul ref={ulRef} className={`${styled.list} `} >
           <li><Link href='/'>Home</Link></li>
           <li><Link href='/about'>About</Link></li>
           <li><Link href='/service'>Service</Link></li>
@@ -140,7 +141,7 @@ const Header = () => {
 
 
           </li>
-          <li className=''><Link href='/contact' >Contact</Link></li>
+          <li ><Link href='/contact' >Contact</Link></li>
 
         </ul>
       </nav>

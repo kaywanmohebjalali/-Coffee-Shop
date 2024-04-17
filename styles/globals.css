@@ -6,6 +6,7 @@
 
 @layer base{
 :root{
+    --color:#33211D;
     --color-hover:#f68551;
 }
 
