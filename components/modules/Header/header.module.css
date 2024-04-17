@@ -3,7 +3,7 @@
     position: relative;
     flex-direction: column;
     background-color: var(--color);
-  padding:1rem 2.5rem;
+  padding:0rem 2.5rem;
     @media screen and (min-width:1000px) {
         flex-direction: row;
         justify-content: space-between;
@@ -11,6 +11,8 @@
         background-color: transparent;
 
     }
+
+   
 
 }
 
@@ -25,7 +27,7 @@
     background-color: var(--color);
     color: #fff;
 
-
+    height: 11vh;
     @media screen and (min-width:1000px) {
         background-color: transparent;
 
