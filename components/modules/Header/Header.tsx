@@ -11,23 +11,24 @@ const Header = () => {
   const childRef = useRef(null)
 
 
- function openMenuHandle(){
-  let eleUl=(ulRef.current as any)?.style  
-  let eleUlChilde=(ulRef.current as any) .childNodes
-  let eleUlChildeArray =Array.from(eleUlChilde)
- 
-  if(eleUl.height=='' || eleUl.height=='0px'){
-    eleUl.height='300px'
-    eleUl.opacity='1'
-    eleUlChildeArray.map((item:any)=>item.style.opacity='1')
-    
-  }else{
- 
-    eleUl.height='0px'
-    eleUlChildeArray.map((item:any)=>item.style.opacity='0')
-    
+  function openMenuHandle() {
+    let eleUl = (ulRef.current as any)?.style
+    let eleUlChilde = (ulRef.current as any).childNodes
+    let eleUlChildeArray = Array.from(eleUlChilde)
+
+    if (eleUl.height == '' || eleUl.height == '0px') {
+      eleUl.height = '300px'
+      eleUl.opacity = '1'
+      eleUlChildeArray.map((item: any) => item.style.opacity = '1')
+
+
+    } else {
+      eleUl.height = '0px'
+      eleUlChildeArray.map((item: any) => item.style.opacity = '0')
+
+    }
   }
- }
+
 
   function close() {
     heightParent = (parentRef.current as any).style
@@ -62,10 +63,42 @@ const Header = () => {
 
   }
 
-  useEffect(() => {
-    window?.addEventListener('resize', close)
 
-    return ()=> window.removeEventListener('resize', close)
+
+  function resizeHandle() {
+    close()
+
+    let eleUl = (ulRef.current as any)?.style
+    let eleUlChilde = (ulRef.current as any).childNodes
+    let eleUlChildeArray = Array.from(eleUlChilde)
+    if (window.innerWidth > 1000) {
+      eleUl.height = 'auto'
+      eleUl.opacity = '1'
+      eleUlChildeArray.map((item: any) => item.style.opacity = '1')
+
+    } else {
+
+
+
+
+      eleUl.transform = 'translateY(-200000px)'
+      setTimeout(() => {
+        eleUl.transform = 'translateY(0px)'
+
+      }, 100);
+
+      eleUl.height = '0px'
+      eleUlChildeArray.map((item: any) => item.style.opacity = '0')
+
+
+    }
+  }
+
+  useEffect(() => {
+    resizeHandle()
+    window?.addEventListener('resize', resizeHandle)
+
+    return () => window.removeEventListener('resize', resizeHandle)
   }, [])
 
 
@@ -75,10 +108,10 @@ const Header = () => {
       <nav className={`${styled.navStyle}  `}>
         <div className={`${styled.topBar}`}>
 
-        <h1 className={styled.text}>COFFEE</h1>
-        <div className={styled.icon} onClick={openMenuHandle}><FaBars /></div>
+          <h1 className={styled.text}>COFFEE</h1>
+          <div className={styled.icon} onClick={openMenuHandle}><FaBars /></div>
         </div>
-        
+
         <ul ref={ulRef} className={`${styled.list} px-[3.5rem]`} >
           <li><Link href='/'>Home</Link></li>
           <li><Link href='/about'>About</Link></li>
@@ -94,7 +127,7 @@ const Header = () => {
 
 
               </p>
-              <FaAngleDown size='0.9rem' />
+              <FaAngleDown size='0.9rem' className='mt-1' />
             </div>
 
 

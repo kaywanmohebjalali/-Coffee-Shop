@@ -1,40 +1,43 @@
-.navStyle{
-   display: flex;
-   position: relative;
-   flex-direction: column;
+.navStyle {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
     @media screen and (min-width:1000px) {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: start;
-       
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
     }
-  
+
 }
-.topBar{
+
+.topBar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    background-color:#fff ;
+    background-color: #fff;
     z-index: 60000;
-    
+
 
 
 }
 
-.icon{
+.icon {
     display: inline;
     font-size: 2rem;
+
     @media screen and (min-width:1000px) {
         display: none;
-         
-      }
+
+    }
 }
 
 .text {
     font-size: 4rem;
-    
+
 }
 
 .list {
@@ -44,24 +47,24 @@
     justify-content: center;
     gap: 15px;
     transition: all 0.3s linear;
-    opacity: 0;  
+    opacity: 0;
     height: 0;
+
 
     @media screen and (min-width:1000px) {
         flex-direction: row;
-       
+        
+        
     }
+    
+
 
 
 }
 
-/* .navStyle:hover .list{
-    height: 300px;
-    
 
-} */
 
-.list *{
+.list * {
     transition: all 0.2s linear;
 }
 
@@ -75,10 +78,10 @@
     display: inline;
     transition: all 0.2s linear;
     height: auto;
-    
+
     @media screen and (min-width:1000px) {
         position: relative;
-       
+
     }
 
 }
@@ -95,7 +98,7 @@
     opacity: 0;
     transition: all 0.2s linear;
 
-    
+
 
 
 }
@@ -103,11 +106,11 @@
 .pagesChildrenActive {
     height: 60px;
     opacity: 1;
-    /* margin: 0.7rem 0.5rem; */
+
     @media screen and (min-width:1000px) {
         position: absolute;
         top: 30px;
-       
+
     }
 
 
@@ -127,9 +130,12 @@
 
     margin-bottom: 6px;
     display: none;
+    color: #000;
 
 }
 
 .testimonial {
     display: none;
+    color: #000;
 }
+
