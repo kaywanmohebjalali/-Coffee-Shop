@@ -15,15 +15,16 @@ const Header = () => {
   let eleUl=(ulRef.current as any)?.style  
   let eleUlChilde=(ulRef.current as any) .childNodes
   let eleUlChildeArray =Array.from(eleUlChilde)
-  console.log(eleUlChilde[0].style.opacity);
-  
+ 
   if(eleUl.height=='' || eleUl.height=='0px'){
     eleUl.height='300px'
-    eleUlChildeArray.map((item:any)=>item.style.opacity=1)
+    eleUl.opacity='1'
+    eleUlChildeArray.map((item:any)=>item.style.opacity='1')
+    
   }else{
  
     eleUl.height='0px'
-    eleUlChildeArray.map((item:any)=>item.style.opacity=0)
+    eleUlChildeArray.map((item:any)=>item.style.opacity='0')
     
   }
  }
@@ -62,9 +63,9 @@ const Header = () => {
   }
 
   useEffect(() => {
-    window?.addEventListener('resize', () => {
-      close()
-    })
+    window?.addEventListener('resize', close)
+
+    return ()=> window.removeEventListener('resize', close)
   }, [])
 
 
@@ -78,7 +79,7 @@ const Header = () => {
         <div className={styled.icon} onClick={openMenuHandle}><FaBars /></div>
         </div>
         
-        <ul ref={ulRef} className={`${styled.list} px-[3.5rem] `} >
+        <ul ref={ulRef} className={`${styled.list} px-[3.5rem]`} >
           <li><Link href='/'>Home</Link></li>
           <li><Link href='/about'>About</Link></li>
           <li><Link href='/service'>Service</Link></li>
