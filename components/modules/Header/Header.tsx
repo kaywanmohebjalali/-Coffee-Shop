@@ -33,7 +33,7 @@ const Header = () => {
   function close() {
     heightParent = (parentRef.current as any).style
     child = childRef?.current;
-    heightParent.height = '25px';
+    heightParent.height = '27px';
     
     child?.classList?.remove(styled.pagesChildrenActive);
     child.childNodes[0].style.display = 'none'
@@ -128,7 +128,7 @@ const Header = () => {
 
 
               </p>
-              <FaAngleDown size='0.9rem' className='' />
+              <FaAngleDown size='0.9rem' className='mt-1' />
             </div>
 
 
