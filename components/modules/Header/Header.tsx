@@ -33,7 +33,7 @@ const Header = () => {
   function close() {
     heightParent = (parentRef.current as any).style
     child = childRef?.current;
-    heightParent.height = '30px';
+    heightParent.height = '25px';
     
     child?.classList?.remove(styled.pagesChildrenActive);
     child.childNodes[0].style.display = 'none'
@@ -123,12 +123,12 @@ const Header = () => {
           <li ref={parentRef} className={`${styled.pages}`} onClick={dropDownHandle}>
             <div className=" flex items-center gap-1">
 
-              <p className={`${styled.textPages} mt-[-5px] sm:mt-[0]`}>
+              <p className={`sm:mt-[0]`}>
                 Pages
 
 
               </p>
-              <FaAngleDown size='0.9rem' className='mt-1' />
+              <FaAngleDown size='0.9rem' className='' />
             </div>
 
 
