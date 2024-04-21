@@ -37,3 +37,14 @@
     transition: all 0.6s ease-in-out !important;
 
 }
+
+.title::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    margin-left: 1px;
+    background: #da9f5b;
+}

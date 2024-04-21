@@ -17,5 +17,6 @@
 
 .tran{
   transition: all 0.3s linear;
+  height: 400px;
 }
 
