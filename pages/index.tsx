@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import About from '../components/templates/Home/About';
+import Service from '@/components/templates/Home/Service';
 
 
 export default function Home() {
@@ -57,6 +58,7 @@ export default function Home() {
 
       </div>
       <About/>
+      <Service/>
     </>
   );
 }
