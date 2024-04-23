@@ -30,17 +30,17 @@ const Service = () => {
         </Card>
       </div>
 
-      <div className="relative max-h-[450px]">
-        <div className=" w-full h-[15px] bg-contain z-10 absolute text-white top-[1] bg-[url('../public/img/overlay-top.png')]"></div>
+      <div className="relative h-[500px] ">
+        <div className=" w-full h-[12px] bg-contain z-10 absolute text-white top-[1] bg-[url('../public/img/overlay-top.png')]"></div>
        <div className="w-full ">
-       <img src="./img/bg.jpg" className='w-full max-h-[450px] ' />
+       <img src="./img/bg.jpg" className='w-full h-[500px] ' />
        <div className={`bg-gradient-to-b  from-[hsla(10,21%,16%,0.9)] from-100%  to-[#332421b3] via-100%     w-full h-full absolute flex flex-col justify-center items-center text-white top-0 gap-6`}>
-          <h3 className='text-[#DA9F5B] text-7xl font-bold'>50% OFF</h3>
-        <h1 className=' font-bold text-4xl'>Sunday Special Offer</h1>
-        <h3 className='text-2xl '>Only for Sunday from 1st Jan to 30th Jan 2045</h3>
-        <form action="" className='mt-3 w-[40%] mx-auto flex'>
-          <input type="email" placeholder='Your Email' className='w-[70%] px-4 py-5 outline-none ring-1 focus:ring-[var(--color-bg)]'/>
-          <button className='px-4 py-5 bg-[var(--color-bg)] w-[30%] '>Sign Up</button>
+          <h3 className='text-[#DA9F5B] text-[2rem] sm:text-7xl font-bold'>50% OFF</h3>
+        <h1 className=' font-bold text-[1.5rem] sm:text-4xl'>Sunday Special Offer</h1>
+        <h3 className='text-[1rem] sm:text-2xl '>Only for Sunday from 1st Jan to 30th Jan 2045</h3>
+        <form action="" className='mt-3 w-[70%] sm:w-[40%] mx-auto flex'>
+          <input type="email" placeholder='Your Email' className='w-[70%] px-4 py-2 md:py-5 outline-none ring-1 focus:ring-[var(--color-bg)]'/>
+          <button className='px-4 py-2 md:py-5 bg-[var(--color-bg)] w-[30%] '>Sign Up</button>
         </form>
     </div>
        </div>

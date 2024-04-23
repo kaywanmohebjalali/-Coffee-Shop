@@ -18,7 +18,7 @@
 
 
 .container {
-    @apply  sm:w-[98%] md:w-[90%]  lg:w-[88%] xl:w-[80%] mx-auto
+    @apply w-[90%] sm:w-[98%] md:w-[90%]  lg:w-[88%] xl:w-[80%] mx-auto
 }
 
 .swiper-button-next::after {
