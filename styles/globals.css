@@ -9,6 +9,8 @@
         --color: #33211D;
         --color-sec: #FFFBF2;
         --color-hover: #f68551;
+        --color-bg: #da9f5b;
+        
     }
 
 }
@@ -16,7 +18,7 @@
 
 
 .container {
-    @apply w-full sm:w-[98%] lg:w-[90%] xl:w-[80%] mx-auto
+    @apply  sm:w-[98%] md:w-[90%]  lg:w-[88%] xl:w-[80%] mx-auto
 }
 
 .swiper-button-next::after {

@@ -3,11 +3,11 @@ import { FaCheck } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className='bg-[#FFFBF2] py-[6rem] flex flex-col gap-12 container'>
+    <section className='container bg-[#FFFBF2] pt-[6rem] text-[var(--color)] flex flex-col gap-12 '>
       <div className="title flex flex-col justify-center items-center gap-3">
 
       <p className='text-2xl  tracking-widest text-[#da9f5b] '>ABOUT US</p>
-      <h2 className='text-[3rem] font-bold'>Serving Since 1950</h2>
+      <h2 className='text-[3rem] font-bold '>Serving Since 1950</h2>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 items-end   justify-center lg:max-w-[1200px] lg:mx-auto">
