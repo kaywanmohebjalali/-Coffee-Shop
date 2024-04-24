@@ -7,7 +7,7 @@ const About = () => {
       <div className="title flex flex-col justify-center items-center gap-3">
 
       <p className='text-2xl  tracking-widest text-[#da9f5b] '>ABOUT US</p>
-      <h2 className='text-[3rem] font-bold '>Serving Since 1950</h2>
+      <h2 className='text-2xl md:text-[3rem] font-bold '>Serving Since 1950</h2>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 items-end   justify-center lg:max-w-[1200px] lg:mx-auto">

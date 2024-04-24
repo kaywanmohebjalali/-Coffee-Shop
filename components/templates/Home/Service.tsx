@@ -1,15 +1,14 @@
 import Card from '@/components/modules/Card/Card'
 import React from 'react'
-import styled from '../../../styles/slider.module.css'
 import { FaTruckMoving , FaMugHot, FaMedal, FaBorderAll   } from "react-icons/fa";
 
 const Service = () => {
   return (
-    <section className=' my-[6rem] flex flex-col gap-8'>
+    <section className=' my-[6rem] flex flex-col gap-8 bg-[var(--color-sec)'>
       <div className="container text-[var(--color)] title flex flex-col justify-center items-center gap-3">
 
         <p className='text-2xl  tracking-widest text-[#da9f5b]'>OUR SERVICES</p>
-        <h2 className='text-[3rem] font-bold'>Fresh & Organic Beans</h2>
+        <h2 className='text-2xl md:text-[3rem] font-bold'>Fresh & Organic Beans</h2>
       </div>
 
       <div className="container grid grid-cols-1 lg:grid-cols-2 w-full gap-12 mb-[6rem]">
@@ -38,13 +37,13 @@ const Service = () => {
           <h3 className='text-[#DA9F5B] text-[2rem] sm:text-7xl font-bold'>50% OFF</h3>
         <h1 className=' font-bold text-[1.5rem] sm:text-4xl'>Sunday Special Offer</h1>
         <h3 className='text-[1rem] sm:text-2xl '>Only for Sunday from 1st Jan to 30th Jan 2045</h3>
-        <form action="" className='mt-3 w-[70%] sm:w-[40%] mx-auto flex'>
-          <input type="email" placeholder='Your Email' className='w-[70%] px-4 py-2 md:py-5 outline-none ring-1 focus:ring-[var(--color-bg)]'/>
-          <button className='px-4 py-2 md:py-5 bg-[var(--color-bg)] w-[30%] '>Sign Up</button>
+        <form action="" className='mt-3  md:w-[45%] mx-auto flex'>
+          <input type="email" placeholder='Your Email' className='w-[70%] px-4 py-2 md:py-4 outline-none ring-1 focus:ring-[var(--color-bg)]'/>
+          <button className='px-4 py-3 md:py-4 bg-[var(--color-bg)] w-[30%] text-black'>Sign Up</button>
         </form>
     </div>
        </div>
-        <div className={`${styled.orc}`}></div>
+        <div className='orc'></div>
 
       </div>
     </section>
