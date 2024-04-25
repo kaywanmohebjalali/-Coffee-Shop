@@ -10,6 +10,8 @@ const Comments = () => {
        <h1 className='text-5xl font-bold'>TESTIMONIAL</h1>
        <h3 className='text-lg'>Home / Testimonial</h3>
   </div>
+  <div className='orc'></div>
+
    </div>
 
    <Testimonial/>

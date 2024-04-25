@@ -12,8 +12,8 @@ const Menu = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="flex flex-col gap-10">
-          <h3 className='text-4xl w-full text-start font-bold my-10'>Hot Coffee</h3>
+        <div className="flex flex-col gap-10 ">
+          <h3 className='text-4xl w-full text-start font-bold my-10 xl:text-center'>Hot Coffee</h3>
 
           <MenuCard src='/img/menu-1.jpg' title='Black Coffee' price='$5' color='#33211D'>Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor </MenuCard>
           <MenuCard src='/img/menu-2.jpg' title='Cochleae Coffee' price='$7' color='#33211D'>Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor </MenuCard>
@@ -21,7 +21,7 @@ const Menu = () => {
         </div>
 
         <div className="flex flex-col gap-10">
-          <h3 className='text-4xl w-full text-start font-bold my-10'>Cold Coffee</h3>
+          <h3 className='text-4xl w-full text-start font-bold my-10 xl:text-center'>Cold Coffee</h3>
 
           <MenuCard src='/img/menu-1.jpg' title='Black Coffee' price='$5' color='#33211D'>Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor </MenuCard>
           <MenuCard src='/img/menu-2.jpg' title='Cochleae Coffee' price='$7' color='#33211D'>Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor </MenuCard>

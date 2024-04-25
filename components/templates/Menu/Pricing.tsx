@@ -10,6 +10,8 @@ const Pricing = () => {
        <h1 className='text-5xl font-bold'>MENU</h1>
        <h3 className='text-lg'>Home / Menu</h3>
   </div>
+  <div className='orc'></div>
+
    </div>
  <Menu/>
 </section>

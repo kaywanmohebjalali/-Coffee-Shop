@@ -10,6 +10,8 @@ const ReservationDetails = () => {
        <h1 className='text-5xl font-bold'>RESERVATION</h1>
        <h3 className='text-lg'>Home / Reservation</h3>
   </div>
+  <div className='orc'></div>
+
    </div>
 <div className="py-[5rem]">
    <Reservation/>

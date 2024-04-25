@@ -10,6 +10,8 @@ const ServicesDetails = () => {
        <h1 className='text-5xl font-bold'>SERVICES</h1>
        <h3 className='text-lg'>Home / Services</h3>
   </div>
+  <div className='orc'></div>
+
    </div>
    <Service/>
 

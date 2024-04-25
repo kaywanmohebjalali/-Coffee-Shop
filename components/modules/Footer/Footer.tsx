@@ -5,16 +5,16 @@ const Footer = () => {
   return (
     <section className="">
 
-      <div className="relative h-[1040px] md:h-[630px]">
+      <div className="relative h-[1040px] md:h-[630px] xl:h-[400px]">
         <div className=" w-full h-[12px] bg-contain z-10 absolute text-white top-[1] bg-[url('../public/img/overlay-top.png')]"></div>
-        <div className="w-full ">
-          <img src="./img/bg.jpg" className='w-full  h-[1040px] md:h-[630px]' />
+        <div className="w-full  ">
+          <img src="./img/bg.jpg" className='w-full  h-[1040px] md:h-[630px] xl:h-[400px]' />
           <div className={`pt-16 bg-gradient-to-b  from-[hsla(10,21%,16%,0.9)] from-100%  to-[#332421b3] via-100%     w-full h-full absolute text-white top-0 bottom-0`}>
-               <div className="">
-               <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+               <div className=" ">
+               <div className="grid grid-cols-1  mx-auto md:grid-cols-2  xl:grid-cols-4 gap-16 sm:px-28 md:px-4">
 
         
-            <div className="px-4 md:px-8 top-left space-y-3 text-lg">
+            <div className="px-4 md:px-8 top-left space-y-3 text-lg ">
               <h1 className='text-2xl font-bold'>GET IN TOUCH</h1>
               <h3 className='flex items-center gap-1'><FaMapMarkerAlt/> 123 Street, New York, USA </h3>
               <h3 className='flex items-center gap-1'><FaPhoneAlt /> +012 345 67890 </h3>

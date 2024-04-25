@@ -10,7 +10,9 @@ const Story = () => {
        <h1 className='text-5xl font-bold'>ABOUT US</h1>
        <h3 className='text-lg'>Home / About Us</h3>
   </div>
+   <div className='orc'></div>
    </div>
+
  <About/>
 </section>
   )
