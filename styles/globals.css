@@ -61,3 +61,7 @@
     
     
   }
+
+  .active{
+    color: var(--color-bg);
+  }

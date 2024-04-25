@@ -1,9 +1,11 @@
+import Reservation from '@/components/templates/Home/Reservation'
+import ReservationDetails from '@/components/templates/Reservation/ReservationDetails'
 import React from 'react'
 
-const Reservation = () => {
+const ReservationPage = () => {
   return (
-    <div>Reservation</div>
+   <ReservationDetails/>
   )
 }
 
-export default Reservation
+export default ReservationPage

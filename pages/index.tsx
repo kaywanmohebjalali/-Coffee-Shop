@@ -1,6 +1,6 @@
 
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styled from '../styles/slider.module.css'
 import 'swiper/css';
@@ -11,6 +11,8 @@ import About from '../components/templates/Home/About';
 import Service from '@/components/templates/Home/Service';
 import Menu from '@/components/templates/Home/Menu';
 import Testimonial from '@/components/templates/Home/Testimonial';
+import Offer from '@/components/templates/Home/Offer';
+import Reservation from '@/components/templates/Home/Reservation';
 
 
 export default function Home() {
@@ -22,10 +24,12 @@ export default function Home() {
 
         <Swiper
 
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           slidesPerView={1}
           navigation
-
+          
+      
+          
 
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
@@ -58,7 +62,9 @@ export default function Home() {
       </div>
       <About />
       <Service />
+      <Offer/>
       <Menu />
+      <Reservation/>
       <Testimonial/>
     </section>
   );

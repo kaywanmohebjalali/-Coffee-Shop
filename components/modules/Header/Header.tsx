@@ -116,7 +116,7 @@ const Header = () => {
         <ul ref={ulRef} className={`${styled.list} `} >
           <li><Link href='/'>Home</Link></li>
           <li><Link href='/about'>About</Link></li>
-          <li><Link href='/service'>Service</Link></li>
+          <li><Link href='/services'>Service</Link></li>
           <li><Link href='/menu'>Menu</Link></li>
 
 

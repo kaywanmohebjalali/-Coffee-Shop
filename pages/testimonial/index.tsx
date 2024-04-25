@@ -1,9 +1,10 @@
+import Comments from '@/components/templates/Testimonial/Comments'
 import React from 'react'
 
-const Testimonial = () => {
+const TestimonialPage = () => {
   return (
-    <div>Testimonial</div>
+       <Comments/>
   )
 }
 
-export default Testimonial
+export default TestimonialPage

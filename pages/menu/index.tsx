@@ -1,9 +1,10 @@
+import Pricing from '@/components/templates/Menu/Pricing'
 import React from 'react'
 
-const Menu = () => {
+const MenuPage = () => {
   return (
-    <div>Menu</div>
+  <Pricing/>
   )
 }
 
-export default Menu
+export default MenuPage

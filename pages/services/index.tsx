@@ -1,9 +1,15 @@
 import React from 'react'
 
-const Service = () => {
+
+import ServicesDetails from '@/components/templates/Services/ServicesDetails'
+
+
+const ServicePage = () => {
   return (
-    <div>Service</div>
+
+  <ServicesDetails/>
+
   )
 }
 
-export default Service
+export default ServicePage

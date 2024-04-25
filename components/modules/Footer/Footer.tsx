@@ -51,8 +51,8 @@ const Footer = () => {
               <h1 className='text-2xl font-bold'>NEWSLETTER</h1>
               <h3>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</h3>
               <form action="" className='mt-3 w-full mx-auto flex'>
-                <input type="email" placeholder='Your Email' className='w-[70%] px-4  outline-none ring-1 focus:ring-[var(--color-bg)]' />
-                <button className='px-1 py-2 md:py-2 bg-[var(--color-bg)] w-[30%] text-black'>Sign Up</button>
+                <input type="email" placeholder='Your Email' className='w-[70%] px-4  outline-none ring-1 focus:ring-[var(--color-bg)] text-black' />
+                <button className='px-1 py-2 md:py-2 bg-[var(--color-bg)] w-[30%] text-black bg-[#da9f5b] cursor-pointer hover:bg-[#D38D3C]  transition    ease-in-out duration-300'>Sign Up</button>
               </form>
             </div>
               

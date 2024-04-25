@@ -1,7 +1,6 @@
 import MenuCard from '@/components/modules/MenuCard/MenuCard'
 import React from 'react'
-import { FaCheck } from 'react-icons/fa6'
-import Reservation from './Reservation'
+
 
 const Menu = () => {
   return (
@@ -30,14 +29,7 @@ const Menu = () => {
         </div>
       </div>
 
-      <div className="relative  mt-12 bg-[var(--color)] mx-auto w-full ">
-        <div className=" w-full h-[8px] bg-contain z-[50000000]  absolute text-white top-[-1px] bg-[url('../public/img/overlay-top.png')]"></div>
-      
-      
-        <Reservation/>
 
-        <div className='orc '></div>
-      </div>
     </section>
   )
 }

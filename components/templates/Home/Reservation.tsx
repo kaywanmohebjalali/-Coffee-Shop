@@ -3,6 +3,8 @@ import { FaCheck } from 'react-icons/fa6'
 
 const Reservation = () => {
   return (
+    <div className="container relative  mt-12 bg-[var(--color)] mx-auto w-full ">
+    <div className=" w-full h-[8px] bg-contain z-[50000000]  absolute text-white top-[-1px] bg-[url('../public/img/overlay-top.png')]"></div>
     <div className="w-full ">
     <img src="./img/bg.jpg" className='w-full h-[700px] md:h-[500px]  ' />
     <div className={` h-[700px] md:h-[500px] bg-gradient-to-b  from-[hsla(10,21%,16%,0.9)] from-100%  to-[#332421b3] via-100%  px-6 text-center sm:px-16   w-full absolute flex flex-col justify-center items-center text-white top-0 gap-6`}>
@@ -22,16 +24,19 @@ const Reservation = () => {
     </div>
     
 
-  <form action="" className='w-full flex flex-col text-center gap-6 z-[5000] p-10 px-6 md:px-16  text-[#555555]'>
+  <form action="" className='w-full flex flex-col text-center gap-6 z-[5000] p-10 px-6 md:px-16  text-[#555555] '>
         <h1 className='text-2xl text-white'>Book Your Table</h1>
-        <input type="text" placeholder='Name' className='p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)]' />
-        <input type="email" placeholder='Email' className=' p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)]' />
-        <input type="date" placeholder='Date' className='p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)]' />
-        <input type="time" placeholder='Time' className=' p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)]' />
-        <input type="text" placeholder='Person' className='p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)]' />
-        <button className='text-black w-full bg-[var(--color-bg)] p-2 text-xl'>Book Now</button>
+        <input type="text" placeholder='Name' className='p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)] focus:text-white' />
+        <input type="email" placeholder='Email' className=' p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)] focus:text-white' />
+        <input type="date" placeholder='Date' className='p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)] focus:text-white' />
+        <input type="time" placeholder='Time' className=' p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)] focus:text-white' />
+        <input type="text" placeholder='Person' className='p-3 bg-[var(--color)] border-[1px] border-[var(--color-bg)] focus:text-white' />
+        <button className='text-black w-full bg-[var(--color-bg)] p-2 text-xl bg-[#da9f5b] cursor-pointer hover:bg-[#D38D3C]  transition    ease-in-out duration-300'>Book Now</button>
       </form>
   </div>
+  <div className='orc '></div>
+  </div>
+  
 
   )
 }
